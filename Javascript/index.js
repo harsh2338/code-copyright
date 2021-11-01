@@ -71,23 +71,30 @@ function printTree(languageIndex) {
   const input = fs.readFileSync(`./source_code/${fname}`, "utf8");
   const chars = new antlr4.InputStream(input);
   var parser;
+  var tree;
   switch (languageIndex) {
     case 0:
       parser = getJavaParser(chars);
+      parser.buildParseTrees = true;
+      tree = parser.classDeclaration();
       break;
     case 1:
       parser = getPythonParser(chars);
+      parser.buildParseTrees = true;
+      tree = parser.compound_stmt();
       break;
     case 2:
       parser = getCPPParser(chars);
+      parser.buildParseTrees = true;
+      tree = parser.compoundStatement();
       break;
     case 3:
       parser = getJavaScriptParser(chars);
-      break;
+      parser.buildParseTrees = true;
+      tree = parser.program();
   }
-  parser.buildParseTrees = true;
-  const tree = parser.program();
+
   tree.accept(new Visitor());
 }
 
-printTree(3);
+printTree(1);
