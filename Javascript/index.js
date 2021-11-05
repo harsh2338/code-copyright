@@ -19,10 +19,14 @@ class Visitor {
     if (ctx.children) {
       return ctx.children.map((child) => {
         if (child.children && child.children.length != 0) {
-          var ruleName = Java8Parser.ruleNames[ctx.ruleIndex];
-          console.log(ruleName + " -> " + ctx.getText());
+          // var ruleName = Java8Parser.ruleNames[ctx.ruleIndex];
+          // if (!child.ctx) console.log(ruleName + " -> " + ctx.getText());
+
           return child.accept(this);
         } else {
+          // console.log("************************************************");
+          var ruleName = Java8Parser.ruleNames[ctx.ruleIndex];
+          if (!child.ctx) console.log(ruleName + " -> " + ctx.getText());
           return child.getText();
         }
       });
@@ -97,4 +101,4 @@ function printTree(languageIndex) {
   tree.accept(new Visitor());
 }
 
-printTree(1);
+printTree(0);
