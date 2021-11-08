@@ -114,8 +114,8 @@ function printTree(languageIndex) {
   var visitorObject = new Visitor(languageIndex);
   tree.accept(visitorObject);
 
-  ruleNames = visitorObject.getRuleNames();
-  console.log(ruleName);
+  var ruleNames = visitorObject.getRuleNames();
+  console.log(ruleNames);
 }
 
 printTree(2);
