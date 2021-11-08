@@ -11,22 +11,35 @@ import CPP14Parser from "./cpp/CPP14Parser.js";
 import fs from "fs";
 
 class Visitor {
+  languageParsers = [Java8Parser, Python3Parser, CPP14Parser, JavaScriptParser];
+  constructor(languageIndex) {
+    this.languageIndex = languageIndex;
+    this.listOfRuleNames = [];
+  }
+
+  getRuleNames() {
+    return this.listOfRuleNames;
+  }
   visitChildren(ctx) {
     if (!ctx) {
       return;
     }
-
     if (ctx.children) {
+      let toIgnore =
+        ctx.children.length >= 1 &&
+        ctx.children[0] instanceof antlr4.ParserRuleContext;
+
+      if (!toIgnore) {
+        let ruleName =
+          this.languageParsers[this.languageIndex].ruleNames[ctx.ruleIndex];
+        // console.log(ruleName + " -> " + ctx.getText());
+        this.listOfRuleNames.push(ruleName);
+      }
+
       return ctx.children.map((child) => {
         if (child.children && child.children.length != 0) {
-          // var ruleName = Java8Parser.ruleNames[ctx.ruleIndex];
-          // if (!child.ctx) console.log(ruleName + " -> " + ctx.getText());
-
           return child.accept(this);
         } else {
-          // console.log("************************************************");
-          var ruleName = Java8Parser.ruleNames[ctx.ruleIndex];
-          if (!child.ctx) console.log(ruleName + " -> " + ctx.getText());
           return child.getText();
         }
       });
@@ -98,7 +111,11 @@ function printTree(languageIndex) {
       tree = parser.program();
   }
 
-  tree.accept(new Visitor());
+  var visitorObject = new Visitor(languageIndex);
+  tree.accept(visitorObject);
+
+  ruleNames = visitorObject.getRuleNames();
+  console.log(ruleName);
 }
 
-printTree(0);
+printTree(2);
