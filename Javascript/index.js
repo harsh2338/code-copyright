@@ -36,8 +36,8 @@ class Visitor {
 			if (!toIgnore) {
 				let ruleName =
 					this.languageParsers[this.languageIndex].ruleNames[ctx.ruleIndex];
-				// console.log(ruleName + " -> " + ctx.getText());
-				this.listOfRuleNames.push(ruleName);
+				console.log(ruleName + " -> " + ctx.getText());
+				this.listOfRuleNames.push(ctx.ruleIndex);
 			}
 
 			return ctx.children.map((child) => {
@@ -119,7 +119,7 @@ function printTree(languageIndex) {
 	tree.accept(visitorObject);
 
 	var ruleNames = visitorObject.getRuleNames();
-	console.log(ruleNames);
+	console.log("rulename", ruleNames);
 
 	//Define n
 	var n = 3;
