@@ -11,6 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "acorn": "^8.5.0",
-    "antlr4": "^4.9.2"
+    "antlr4": "^4.9.2",
+    "crypto-js": "^4.1.1",
+    "n-gram": "^2.0.1"
   }
 }
