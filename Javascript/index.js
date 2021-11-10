@@ -32,7 +32,7 @@ class Visitor {
       if (!toIgnore) {
         let ruleName =
           this.languageParsers[this.languageIndex].ruleNames[ctx.ruleIndex];
-        // console.log(ruleName + " -> " + ctx.getText());
+        console.log(ruleName + " -> " + ctx.getText());
         this.listOfRuleNames.push(ctx.ruleIndex);
       }
 
