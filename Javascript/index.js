@@ -33,7 +33,7 @@ class Visitor {
         let ruleName =
           this.languageParsers[this.languageIndex].ruleNames[ctx.ruleIndex];
         // console.log(ruleName + " -> " + ctx.getText());
-        this.listOfRuleNames.push(ruleName);
+        this.listOfRuleNames.push(ctx.ruleIndex);
       }
 
       return ctx.children.map((child) => {
