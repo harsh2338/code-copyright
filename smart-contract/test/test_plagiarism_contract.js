@@ -9,6 +9,7 @@ contract("Test PlagiarismContract", async (accounts) => {
   it("should add and get new Code file", async () => {
     const docCID = "QmbWqxBEKC3P8tqsKc98xmWNzrzDtRLMiMPL8wBuTGsMnR";
     const contract = await PlagiarismContract.deployed();
+    
     const hashSet = [
       "47c4c1ab373a840d666dc61d9af1ff29",
       "e75cc2ca4058524c13fd6a1473325d00",
@@ -41,7 +42,7 @@ contract("Test PlagiarismContract", async (accounts) => {
     assert.equal(res1.codeFingerPrint, codeFingerPrint);
 
     // assert.equal(res1.hashSet, hashSet);
-    console.log(res1.hashSet.equals(hashSet));
-    console.log(res1);
+    // console.log(res1.hashSet.equals(hashSet));
+    // console.log(res1);
   });
 });

@@ -1,7 +1,11 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.4.22 <0.9.0;
 pragma experimental ABIEncoderV2;
-contract PlagiarismContract {
+
+// import "@openzeppelin/contracts-ethereum-package/contracts/GSN/GSNRecipient.sol";
+
+
+contract PlagiarismContract  {
 
   struct CodeFile{
     uint fileId;
@@ -57,5 +61,24 @@ contract PlagiarismContract {
     {
         return filesMap[_fileIndex];
     }
+
+// function increase() public {
+//         value += 1;
+//     }
+
+//     function acceptRelayedCall(
+//         address relay,
+//         address from,
+//         bytes calldata encodedFunction,
+//         uint256 transactionFee,
+//         uint256 gasPrice,
+//         uint256 gasLimit,
+//         uint256 nonce,
+//         bytes calldata approvalData,
+//         uint256 maxPossibleCharge
+//     ) external view returns (uint256, bytes memory) {
+//         return _approveRelayedCall();
+//     }
+
 
 }
