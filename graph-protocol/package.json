@@ -1,4 +1,13 @@
 {
+    "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "auth": "graph auth --product hosted-service 0x9913e83fe6d615478AE4703fF49b8785d5dfB90e",
+    "deploy": "graph deploy --product hosted-service harsh2338/orangelife ",
+    "create-local": "graph create --node http://localhost:8020/ medIns-life-v1",
+    "remove-local": "graph remove --node http://localhost:8020/ medIns-life-v1",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 medIns-life-v1"
+  },
   "dependencies": {
     "@graphprotocol/graph-cli": "^0.25.1"
   }
