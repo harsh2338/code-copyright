@@ -35,6 +35,9 @@ contract PlagiarismContract  {
     string [] hashSet
   ) ;
 
+  event PlagiarismResult(
+    bool plagiarisedResult
+  );
   constructor() public {
   }
 
@@ -47,20 +50,60 @@ contract PlagiarismContract  {
 
     require(_fileSize>0, "CodeFile size is 0");
 
-    fileCount++;
+    if(checkIfPlagiarised(_hashSet)){
+      emit PlagiarismResult(true);
+    }
+    else{
+      fileCount++;
 
-    filesMap[fileCount] = CodeFile(fileCount,_fileSize,_fileIPFSHash, _fileName, _fileDescription,msg.sender,block.timestamp,_codeFingerPrint,_hashSet);
+      filesMap[fileCount] = CodeFile(fileCount,_fileSize,_fileIPFSHash, _fileName, _fileDescription,msg.sender,block.timestamp,_codeFingerPrint,_hashSet);
 
-    emit CodeFileUploadEvent(fileCount,_fileSize,_fileIPFSHash, _fileName, _fileDescription,msg.sender,block.timestamp,_codeFingerPrint,_hashSet);
+      emit CodeFileUploadEvent(fileCount,_fileSize,_fileIPFSHash, _fileName, _fileDescription,msg.sender,block.timestamp,_codeFingerPrint,_hashSet);
+    }
   }
 
-    function getFiles(uint _fileIndex)
+    function getFileByIndex(uint _fileIndex)
         public
         view
         returns (CodeFile memory records)
     {
         return filesMap[_fileIndex];
     }
+
+    function getFileHashSet(uint _fileIndex) private
+        view
+        returns (string [] memory )
+    {
+        return filesMap[_fileIndex].hashSet;
+    }
+
+    function checkIfPlagiarised( string [] memory _hashSet)private  returns(bool){
+      uint similarityScore = getMaximumSimilarityScore(_hashSet);
+
+      uint thresholdSimilarity=0;
+      if(similarityScore>thresholdSimilarity)
+        return true;
+      else
+        return false;
+    }
+
+    function getMaximumSimilarityScore( string [] memory _hashSet) private returns (uint){
+      uint maxSimilarity=0;
+      uint similarity=0;
+      for(uint i=1;i<=fileCount;i++){
+        string [] memory existingFilehashSet=getFileHashSet(i);
+        for(uint j=1;j<=existingFilehashSet.length;j++){
+          //TODO
+          // uint similarity=getSimilarity();
+          if(similarity>maxSimilarity){
+            maxSimilarity=similarity;
+          }
+        }
+      }
+      return maxSimilarity;
+    }
+
+    
 
 // function increase() public {
 //         value += 1;

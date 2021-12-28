@@ -26,8 +26,7 @@ contract("Test PlagiarismContract", async (accounts) => {
       "89befd1102aeaead24cfe2b9fa9997f9",
     ];
 
-    const codeFingerPrint =
-      "45543f3768c51af8a42bb6c80acde97f5e7f653b50c1e4af3a4039bf4ef5405a";
+    const codeFingerPrint = "45543f3768c51af8a42bb6c80acde97f5e7f653b50c1e4af3a4039bf4ef5405a";
     await contract.uploadFile(
       500,
       docCID,
