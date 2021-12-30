@@ -565,12 +565,12 @@ import Jaccard from "jaccard-index";
 
 var jaccard = Jaccard();
 
-for (var i = 0; i < 10; i++) {
-  console.log("Program", i + 1);
-  for (var j = 0; j < 10; j++) {
-    console.log(jaccard.index(arr[i], arr[j]));
-  }
-  console.log("\n");
-}
+// for (var i = 0; i < 10; i++) {
+//   console.log("Program", i + 1);
+//   for (var j = 0; j < 10; j++) {
+//     console.log(jaccard.index(arr[i], arr[j]));
+//   }
+//   console.log("\n");
+// }
 
 console.log(jaccard.index(arr[1], narr));
