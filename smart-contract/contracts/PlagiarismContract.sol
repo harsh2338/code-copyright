@@ -181,7 +181,7 @@ function compareStrings(string memory a, string memory b) public pure returns (b
         } 
 
         uint commonElementsCount = getCommonElementsCount(list1,list1,setLength1,setLength2);
-        uint unionCount=setLength1+setLength2-commonElementsCount;        
+        uint unionCount=l1.length+l2.length-commonElementsCount;        
         
         return commonElementsCount*100/unionCount;
     } 
