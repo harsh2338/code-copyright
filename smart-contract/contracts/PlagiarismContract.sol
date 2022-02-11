@@ -1,8 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.4.22 <0.9.0;
 pragma experimental ABIEncoderV2;
-import "./JaccardsSimilarity.sol";
-import "./Set.sol";
+
 
 // import "@openzeppelin/contracts-ethereum-package/contracts/GSN/GSNRecipient.sol";
 
@@ -40,8 +39,7 @@ contract PlagiarismContract  {
   event PlagiarismResult(
     bool plagiarisedResult
   );
-  constructor() public {
-  }
+
 
   function uploadFile(uint _fileSize, string memory _fileIPFSHash, string memory _fileName,string memory _fileDescription, string memory _codeFingerPrint, string [] memory _hashSet) public {
     require(bytes(_fileIPFSHash).length > 0, "CodeFile Hash is empty");
@@ -79,7 +77,7 @@ contract PlagiarismContract  {
         return filesMap[_fileIndex].hashSet;
     }
 
-    function checkIfPlagiarised( string [] memory _hashSet)private  returns(bool){
+    function checkIfPlagiarised( string [] memory _hashSet)private view returns(bool){
       uint similarityScore = getMaximumSimilarityScore(_hashSet);
 
       uint thresholdSimilarity=0;
@@ -89,14 +87,15 @@ contract PlagiarismContract  {
         return false;
     }
 
-    function getMaximumSimilarityScore( string [] memory _hashSet) private view returns (uint){
+    function getMaximumSimilarityScore( string [] memory _hashSet) public view returns (uint){
       uint maxSimilarity=0;
       uint similarity=0;
+                similarity=calculateSimilarityScore(_hashSet,_hashSet);
+
       for(uint i=1;i<=fileCount;i++){
         string [] memory existingFilehashSet=getFileHashSet(i);
         for(uint j=1;j<=existingFilehashSet.length;j++){
-          //TODO
-          // uint similarity=getSimilarity();
+          // similarity=calculateSimilarityScore(_hashSet,_hashSet);
           if(similarity>maxSimilarity){
             maxSimilarity=similarity;
           }
@@ -105,12 +104,7 @@ contract PlagiarismContract  {
       return maxSimilarity;
     }
 
-    function testJaccards( string [] memory _hashSet1,string [] memory _hashSet2) public returns (uint){
-      // JaccardsSimilarity js= new JaccardsSimilarity();
-      // uint ans= calculateSimilarityScore(_hashSet1,_hashSet2);
-      // return ans;
-    }
-
+ 
     
 
 // function increase() public {
@@ -132,7 +126,7 @@ contract PlagiarismContract  {
 //     }
 
 
-function compareStrings(string memory a, string memory b) public pure returns (bool) {
+function compareStrings(string memory a, string memory b) private pure returns (bool) {
         return (keccak256(abi.encodePacked((a))) == keccak256(abi.encodePacked((b))));
     }
     function getCommonElementsCount(string[] memory list1, string[] memory list2,uint setLength1,uint setLength2) public pure returns (uint){
