@@ -1,12 +1,14 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.4.22 <0.9.0;
-pragma experimental ABIEncoderV2;
+import "@opengsn/contracts/src/BaseRelayRecipient.sol";
 
 
 // import "@openzeppelin/contracts-ethereum-package/contracts/GSN/GSNRecipient.sol";
 
 
-contract PlagiarismContract  {
+contract PlagiarismContract is BaseRelayRecipient 
+{
+	string public override versionRecipient = "2.0.0";
 
   struct CodeFile{
     uint fileId;
@@ -40,7 +42,21 @@ contract PlagiarismContract  {
     bool plagiarisedResult
   );
 
+    // function acceptRelayedCall(
+    //     address relay,
+    //     address from,
+    //     bytes calldata encodedFunction,
+    //     uint256 transactionFee,
+    //     uint256 gasPrice,
+    //     uint256 gasLimit,
+    //     uint256 nonce,
+    //     bytes calldata approvalData,
+    //     uint256 maxPossibleCharge
+    // ) external view returns (uint256, bytes memory) {
+    //     return _approveRelayedCall();
+    // }
 
+    
   function uploadFile(uint _fileSize, string memory _fileIPFSHash, string memory _fileName,string memory _fileDescription, string memory _codeFingerPrint, string [] memory _hashSet) public {
     require(bytes(_fileIPFSHash).length > 0, "CodeFile Hash is empty");
 
@@ -56,9 +72,9 @@ contract PlagiarismContract  {
     else{
       fileCount++;
 
-      filesMap[fileCount] = CodeFile(fileCount,_fileSize,_fileIPFSHash, _fileName, _fileDescription,msg.sender,block.timestamp,_codeFingerPrint,_hashSet);
+      filesMap[fileCount] = CodeFile(fileCount,_fileSize,_fileIPFSHash, _fileName, _fileDescription,_msgSender(),block.timestamp,_codeFingerPrint,_hashSet);
 
-      emit CodeFileUploadEvent(fileCount,_fileSize,_fileIPFSHash, _fileName, _fileDescription,msg.sender,block.timestamp,_codeFingerPrint,_hashSet);
+      emit CodeFileUploadEvent(fileCount,_fileSize,_fileIPFSHash, _fileName, _fileDescription,_msgSender(),block.timestamp,_codeFingerPrint,_hashSet);
     }
   }
 

@@ -114,7 +114,7 @@ function App() {
 			reader.onload = async (e) => {
 				let text = e.target.result;
 				const langIndex = langIndexes[lang];
-				fetch("http://localhost:8000", {
+				fetch("http://localhost:8080", {
 					method: "POST",
 					headers: {
 						"Content-Type": "application/json",

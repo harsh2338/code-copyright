@@ -1,7 +1,3 @@
-import { nGram } from "n-gram";
-import { getHashSet } from "./hashSet.js";
-import { getNGrams } from "./nGrams.js";
-import { getCodeFingerprint } from "./codeFingerprint.js";
 import { printTree } from "./index.js";
 import Jaccard from "jaccard-index";
 
@@ -14,7 +10,7 @@ var hs1, hs2;
 var jaccAns = [];
 
 hs1 = printTree(2, `./data/cpp/${files[10]}`);
-hs2 = printTree(2, `./data/cpp/${files[1]}`);
+hs2 = printTree(2, `./data/cpp/${files[0]}`);
 jaccAns.push(jaccard.index(hs1, hs2));
 console.log(jaccAns);
 
