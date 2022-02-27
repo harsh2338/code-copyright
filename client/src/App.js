@@ -5,6 +5,7 @@ import ipfs from "./ipfs";
 import "./App.css";
 import DragDrop from "./components/DragDrop";
 
+
 function App() {
 	const [lang, setLang] = useState(null);
 	const [file, setFile] = useState(null);
@@ -23,6 +24,10 @@ function App() {
 		js: 3,
 	};
 
+	const  forwarder = "0x396292EfC0f4d63d40E36c36ef26c80067485312"
+  const paymaster = "0xd8a562D9EaF925138656B0680813B2Fd353cb7Aa"
+
+
 	useEffect(() => {
 		getData();
 	}, [ipfsHash]);
@@ -30,7 +35,7 @@ function App() {
 	useEffect(() => {
 		async function fetchData() {
 			try {
-				// Get network provider and web3 instance.
+
 				const web3 = await getWeb3();
 
 				// Use web3 to get the user's accounts.
@@ -84,7 +89,7 @@ function App() {
 				codeFingerprint,
 				hashSet
 			)
-			.send({ from: accounts[0] });
+			.send({ from: paymaster,forwarder });
 	};
 
 	var onLangChange = (e) => {

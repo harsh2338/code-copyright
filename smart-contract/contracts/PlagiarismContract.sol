@@ -8,7 +8,11 @@ import "@opengsn/contracts/src/BaseRelayRecipient.sol";
 
 contract PlagiarismContract is BaseRelayRecipient 
 {
-	string public override versionRecipient = "2.0.0";
+	// string public override versionRecipient = "2.0.0";
+
+    function versionRecipient() external override view returns (string memory) {
+        return "2.0.0";
+    }
 
   struct CodeFile{
     uint fileId;

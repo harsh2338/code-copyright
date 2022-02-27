@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "@opengsn/contracts": "2.2.6",
+    "@opengsn/provider": "2.2.6",
     "@truffle/hdwallet-provider": "^1.4.2",
     "axios": "^0.24.0",
     "truffle": "^5.4.2",
