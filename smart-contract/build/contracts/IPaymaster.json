@@ -303,21 +303,21 @@
     "absolutePath": "@opengsn/contracts/src/interfaces/IPaymaster.sol",
     "exportedSymbols": {
       "GsnTypes": [
-        3033
+        2932
       ],
       "IForwarder": [
-        2087
+        1986
       ],
       "IPaymaster": [
-        2160
+        2059
       ]
     },
-    "id": 2161,
+    "id": 2060,
     "license": "GPL-3.0-only",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 2089,
+        "id": 1988,
         "literals": [
           "solidity",
           ">=",
@@ -325,26 +325,26 @@
           ".6"
         ],
         "nodeType": "PragmaDirective",
-        "src": "41:24:4"
+        "src": "41:24:3"
       },
       {
-        "id": 2090,
+        "id": 1989,
         "literals": [
           "abicoder",
           "v2"
         ],
         "nodeType": "PragmaDirective",
-        "src": "66:19:4"
+        "src": "66:19:3"
       },
       {
         "absolutePath": "@opengsn/contracts/src/utils/GsnTypes.sol",
         "file": "../utils/GsnTypes.sol",
-        "id": 2091,
+        "id": 1990,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 2161,
-        "sourceUnit": 3034,
-        "src": "87:31:4",
+        "scope": 2060,
+        "sourceUnit": 2933,
+        "src": "87:31:3",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -354,27 +354,27 @@
         "contractDependencies": [],
         "contractKind": "interface",
         "fullyImplemented": false,
-        "id": 2160,
+        "id": 2059,
         "linearizedBaseContracts": [
-          2160
+          2059
         ],
         "name": "IPaymaster",
-        "nameLocation": "130:10:4",
+        "nameLocation": "130:10:3",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "canonicalName": "IPaymaster.GasAndDataLimits",
-            "id": 2100,
+            "id": 1999,
             "members": [
               {
                 "constant": false,
-                "id": 2093,
+                "id": 1992,
                 "mutability": "mutable",
                 "name": "acceptanceBudget",
-                "nameLocation": "1801:16:4",
+                "nameLocation": "1801:16:3",
                 "nodeType": "VariableDeclaration",
-                "scope": 2100,
-                "src": "1793:24:4",
+                "scope": 1999,
+                "src": "1793:24:3",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -382,10 +382,10 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 2092,
+                  "id": 1991,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
-                  "src": "1793:7:4",
+                  "src": "1793:7:3",
                   "typeDescriptions": {
                     "typeIdentifier": "t_uint256",
                     "typeString": "uint256"
@@ -395,13 +395,13 @@
               },
               {
                 "constant": false,
-                "id": 2095,
+                "id": 1994,
                 "mutability": "mutable",
                 "name": "preRelayedCallGasLimit",
-                "nameLocation": "1835:22:4",
+                "nameLocation": "1835:22:3",
                 "nodeType": "VariableDeclaration",
-                "scope": 2100,
-                "src": "1827:30:4",
+                "scope": 1999,
+                "src": "1827:30:3",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -409,10 +409,10 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 2094,
+                  "id": 1993,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
-                  "src": "1827:7:4",
+                  "src": "1827:7:3",
                   "typeDescriptions": {
                     "typeIdentifier": "t_uint256",
                     "typeString": "uint256"
@@ -422,13 +422,13 @@
               },
               {
                 "constant": false,
-                "id": 2097,
+                "id": 1996,
                 "mutability": "mutable",
                 "name": "postRelayedCallGasLimit",
-                "nameLocation": "1875:23:4",
+                "nameLocation": "1875:23:3",
                 "nodeType": "VariableDeclaration",
-                "scope": 2100,
-                "src": "1867:31:4",
+                "scope": 1999,
+                "src": "1867:31:3",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -436,10 +436,10 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 2096,
+                  "id": 1995,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
-                  "src": "1867:7:4",
+                  "src": "1867:7:3",
                   "typeDescriptions": {
                     "typeIdentifier": "t_uint256",
                     "typeString": "uint256"
@@ -449,13 +449,13 @@
               },
               {
                 "constant": false,
-                "id": 2099,
+                "id": 1998,
                 "mutability": "mutable",
                 "name": "calldataSizeLimit",
-                "nameLocation": "1916:17:4",
+                "nameLocation": "1916:17:3",
                 "nodeType": "VariableDeclaration",
-                "scope": 2100,
-                "src": "1908:25:4",
+                "scope": 1999,
+                "src": "1908:25:3",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -463,10 +463,10 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 2098,
+                  "id": 1997,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
-                  "src": "1908:7:4",
+                  "src": "1908:7:3",
                   "typeDescriptions": {
                     "typeIdentifier": "t_uint256",
                     "typeString": "uint256"
@@ -476,108 +476,108 @@
               }
             ],
             "name": "GasAndDataLimits",
-            "nameLocation": "1766:16:4",
+            "nameLocation": "1766:16:3",
             "nodeType": "StructDefinition",
-            "scope": 2160,
-            "src": "1759:181:4",
+            "scope": 2059,
+            "src": "1759:181:3",
             "visibility": "public"
           },
           {
             "documentation": {
-              "id": 2101,
+              "id": 2000,
               "nodeType": "StructuredDocumentation",
-              "src": "1946:95:4",
+              "src": "1946:95:3",
               "text": " Return the Gas Limits and msg.data max size constants used by the Paymaster."
             },
             "functionSelector": "b039a88f",
-            "id": 2107,
+            "id": 2006,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "getGasAndDataLimits",
-            "nameLocation": "2055:19:4",
+            "nameLocation": "2055:19:3",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2102,
+              "id": 2001,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "2074:2:4"
+              "src": "2074:2:3"
             },
             "returnParameters": {
-              "id": 2106,
+              "id": 2005,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2105,
+                  "id": 2004,
                   "mutability": "mutable",
                   "name": "limits",
-                  "nameLocation": "2145:6:4",
+                  "nameLocation": "2145:6:3",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2107,
-                  "src": "2121:30:4",
+                  "scope": 2006,
+                  "src": "2121:30:3",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_GasAndDataLimits_$2100_memory_ptr",
+                    "typeIdentifier": "t_struct$_GasAndDataLimits_$1999_memory_ptr",
                     "typeString": "struct IPaymaster.GasAndDataLimits"
                   },
                   "typeName": {
-                    "id": 2104,
+                    "id": 2003,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 2103,
+                      "id": 2002,
                       "name": "GasAndDataLimits",
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 2100,
-                      "src": "2121:16:4"
+                      "referencedDeclaration": 1999,
+                      "src": "2121:16:3"
                     },
-                    "referencedDeclaration": 2100,
-                    "src": "2121:16:4",
+                    "referencedDeclaration": 1999,
+                    "src": "2121:16:3",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_GasAndDataLimits_$2100_storage_ptr",
+                      "typeIdentifier": "t_struct$_GasAndDataLimits_$1999_storage_ptr",
                       "typeString": "struct IPaymaster.GasAndDataLimits"
                     }
                   },
                   "visibility": "internal"
                 }
               ],
-              "src": "2111:46:4"
+              "src": "2111:46:3"
             },
-            "scope": 2160,
-            "src": "2046:112:4",
+            "scope": 2059,
+            "src": "2046:112:3",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           },
           {
             "functionSelector": "7da0a877",
-            "id": 2112,
+            "id": 2011,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "trustedForwarder",
-            "nameLocation": "2173:16:4",
+            "nameLocation": "2173:16:3",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2108,
+              "id": 2007,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "2189:2:4"
+              "src": "2189:2:3"
             },
             "returnParameters": {
-              "id": 2111,
+              "id": 2010,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2110,
+                  "id": 2009,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2112,
-                  "src": "2215:7:4",
+                  "scope": 2011,
+                  "src": "2215:7:3",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -585,10 +585,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 2109,
+                    "id": 2008,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "2215:7:4",
+                    "src": "2215:7:3",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -598,48 +598,48 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "2214:9:4"
+              "src": "2214:9:3"
             },
-            "scope": 2160,
-            "src": "2164:60:4",
+            "scope": 2059,
+            "src": "2164:60:3",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           },
           {
             "documentation": {
-              "id": 2113,
+              "id": 2012,
               "nodeType": "StructuredDocumentation",
-              "src": "2226:48:4",
+              "src": "2226:48:3",
               "text": " return the relayHub of this contract."
             },
             "functionSelector": "74e861d6",
-            "id": 2118,
+            "id": 2017,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "getHubAddr",
-            "nameLocation": "2288:10:4",
+            "nameLocation": "2288:10:3",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2114,
+              "id": 2013,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "2298:2:4"
+              "src": "2298:2:3"
             },
             "returnParameters": {
-              "id": 2117,
+              "id": 2016,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2116,
+                  "id": 2015,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2118,
-                  "src": "2324:7:4",
+                  "scope": 2017,
+                  "src": "2324:7:3",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -647,10 +647,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 2115,
+                    "id": 2014,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "2324:7:4",
+                    "src": "2324:7:3",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -660,48 +660,48 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "2323:9:4"
+              "src": "2323:9:3"
             },
-            "scope": 2160,
-            "src": "2279:54:4",
+            "scope": 2059,
+            "src": "2279:54:3",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           },
           {
             "documentation": {
-              "id": 2119,
+              "id": 2018,
               "nodeType": "StructuredDocumentation",
-              "src": "2339:161:4",
+              "src": "2339:161:3",
               "text": " Can be used to determine if the contract can pay for incoming calls before making any.\n @return the paymaster's deposit in the RelayHub."
             },
             "functionSelector": "2afe31c1",
-            "id": 2124,
+            "id": 2023,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "getRelayHubDeposit",
-            "nameLocation": "2514:18:4",
+            "nameLocation": "2514:18:3",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2120,
+              "id": 2019,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "2532:2:4"
+              "src": "2532:2:3"
             },
             "returnParameters": {
-              "id": 2123,
+              "id": 2022,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2122,
+                  "id": 2021,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2124,
-                  "src": "2558:7:4",
+                  "scope": 2023,
+                  "src": "2558:7:3",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -709,10 +709,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 2121,
+                    "id": 2020,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "2558:7:4",
+                    "src": "2558:7:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -721,62 +721,62 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "2557:9:4"
+              "src": "2557:9:3"
             },
-            "scope": 2160,
-            "src": "2505:62:4",
+            "scope": 2059,
+            "src": "2505:62:3",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           },
           {
             "documentation": {
-              "id": 2125,
+              "id": 2024,
               "nodeType": "StructuredDocumentation",
-              "src": "2573:2198:4",
+              "src": "2573:2198:3",
               "text": " Called by Relay (and RelayHub), to validate if the paymaster agrees to pay for this call.\n MUST be protected with relayHubOnly() in case it modifies state.\n The Paymaster rejects by the following \"revert\" operations\n  - preRelayedCall() method reverts\n  - the forwarder reverts because of nonce or signature error\n  - the paymaster returned \"rejectOnRecipientRevert\", and the recipient contract reverted.\n In any of the above cases, all paymaster calls (and recipient call) are reverted.\n In any other case, the paymaster agrees to pay for the gas cost of the transaction (note\n  that this includes also postRelayedCall revert)\n The rejectOnRecipientRevert flag means the Paymaster \"delegate\" the rejection to the recipient\n  code.  It also means the Paymaster trust the recipient to reject fast: both preRelayedCall,\n  forwarder check and receipient checks must fit into the GasLimits.acceptanceBudget,\n  otherwise the TX is paid by the Paymaster.\n  @param relayRequest - the full relay request structure\n  @param signature - user's EIP712-compatible signature of the {@link relayRequest}.\n              Note that in most cases the paymaster shouldn't try use it at all. It is always checked\n              by the forwarder immediately after preRelayedCall returns.\n  @param approvalData - extra dapp-specific data (e.g. signature from trusted party)\n  @param maxPossibleGas - based on values returned from {@link getGasAndDataLimits},\n         the RelayHub will calculate the maximum possible amount of gas the user may be charged for.\n         In order to convert this value to wei, the Paymaster has to call \"relayHub.calculateCharge()\"\n  return:\n      a context to be passed to postRelayedCall\n      rejectOnRecipientRevert - TRUE if paymaster want to reject the TX if the recipient reverts.\n          FALSE means that rejects by the recipient will be completed on chain, and paid by the paymaster.\n          (note that in the latter case, the preRelayedCall and postRelayedCall are not reverted)."
             },
             "functionSelector": "00be5dd4",
-            "id": 2141,
+            "id": 2040,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "preRelayedCall",
-            "nameLocation": "4785:14:4",
+            "nameLocation": "4785:14:3",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2135,
+              "id": 2034,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2128,
+                  "id": 2027,
                   "mutability": "mutable",
                   "name": "relayRequest",
-                  "nameLocation": "4840:12:4",
+                  "nameLocation": "4840:12:3",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2141,
-                  "src": "4809:43:4",
+                  "scope": 2040,
+                  "src": "4809:43:3",
                   "stateVariable": false,
                   "storageLocation": "calldata",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_RelayRequest_$3032_calldata_ptr",
+                    "typeIdentifier": "t_struct$_RelayRequest_$2931_calldata_ptr",
                     "typeString": "struct GsnTypes.RelayRequest"
                   },
                   "typeName": {
-                    "id": 2127,
+                    "id": 2026,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 2126,
+                      "id": 2025,
                       "name": "GsnTypes.RelayRequest",
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 3032,
-                      "src": "4809:21:4"
+                      "referencedDeclaration": 2931,
+                      "src": "4809:21:3"
                     },
-                    "referencedDeclaration": 3032,
-                    "src": "4809:21:4",
+                    "referencedDeclaration": 2931,
+                    "src": "4809:21:3",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_RelayRequest_$3032_storage_ptr",
+                      "typeIdentifier": "t_struct$_RelayRequest_$2931_storage_ptr",
                       "typeString": "struct GsnTypes.RelayRequest"
                     }
                   },
@@ -784,13 +784,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 2130,
+                  "id": 2029,
                   "mutability": "mutable",
                   "name": "signature",
-                  "nameLocation": "4877:9:4",
+                  "nameLocation": "4877:9:3",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2141,
-                  "src": "4862:24:4",
+                  "scope": 2040,
+                  "src": "4862:24:3",
                   "stateVariable": false,
                   "storageLocation": "calldata",
                   "typeDescriptions": {
@@ -798,10 +798,10 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 2129,
+                    "id": 2028,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
-                    "src": "4862:5:4",
+                    "src": "4862:5:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes_storage_ptr",
                       "typeString": "bytes"
@@ -811,13 +811,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 2132,
+                  "id": 2031,
                   "mutability": "mutable",
                   "name": "approvalData",
-                  "nameLocation": "4911:12:4",
+                  "nameLocation": "4911:12:3",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2141,
-                  "src": "4896:27:4",
+                  "scope": 2040,
+                  "src": "4896:27:3",
                   "stateVariable": false,
                   "storageLocation": "calldata",
                   "typeDescriptions": {
@@ -825,10 +825,10 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 2131,
+                    "id": 2030,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
-                    "src": "4896:5:4",
+                    "src": "4896:5:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes_storage_ptr",
                       "typeString": "bytes"
@@ -838,13 +838,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 2134,
+                  "id": 2033,
                   "mutability": "mutable",
                   "name": "maxPossibleGas",
-                  "nameLocation": "4941:14:4",
+                  "nameLocation": "4941:14:3",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2141,
-                  "src": "4933:22:4",
+                  "scope": 2040,
+                  "src": "4933:22:3",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -852,10 +852,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 2133,
+                    "id": 2032,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "4933:7:4",
+                    "src": "4933:7:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -864,21 +864,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "4799:162:4"
+              "src": "4799:162:3"
             },
             "returnParameters": {
-              "id": 2140,
+              "id": 2039,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2137,
+                  "id": 2036,
                   "mutability": "mutable",
                   "name": "context",
-                  "nameLocation": "5001:7:4",
+                  "nameLocation": "5001:7:3",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2141,
-                  "src": "4988:20:4",
+                  "scope": 2040,
+                  "src": "4988:20:3",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -886,10 +886,10 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 2136,
+                    "id": 2035,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
-                    "src": "4988:5:4",
+                    "src": "4988:5:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes_storage_ptr",
                       "typeString": "bytes"
@@ -899,13 +899,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 2139,
+                  "id": 2038,
                   "mutability": "mutable",
                   "name": "rejectOnRecipientRevert",
-                  "nameLocation": "5015:23:4",
+                  "nameLocation": "5015:23:3",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2141,
-                  "src": "5010:28:4",
+                  "scope": 2040,
+                  "src": "5010:28:3",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -913,10 +913,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 2138,
+                    "id": 2037,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "5010:4:4",
+                    "src": "5010:4:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -925,42 +925,42 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "4987:52:4"
+              "src": "4987:52:3"
             },
-            "scope": 2160,
-            "src": "4776:264:4",
+            "scope": 2059,
+            "src": "4776:264:3",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           },
           {
             "documentation": {
-              "id": 2142,
+              "id": 2041,
               "nodeType": "StructuredDocumentation",
-              "src": "5046:887:4",
+              "src": "5046:887:3",
               "text": " This method is called after the actual relayed function call.\n It may be used to record the transaction (e.g. charge the caller by some contract logic) for this call.\n MUST be protected with relayHubOnly() in case it modifies state.\n @param context - the call context, as returned by the preRelayedCall\n @param success - true if the relayed call succeeded, false if it reverted\n @param gasUseWithoutPost - the actual amount of gas used by the entire transaction, EXCEPT\n        the gas used by the postRelayedCall itself.\n @param relayData - the relay params of the request. can be used by relayHub.calculateCharge()\n Revert in this functions causes a revert of the client's relayed call (and preRelayedCall(), but the Paymaster\n is still committed to pay the relay for the entire transaction."
             },
             "functionSelector": "76fa01c3",
-            "id": 2154,
+            "id": 2053,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "postRelayedCall",
-            "nameLocation": "5947:15:4",
+            "nameLocation": "5947:15:3",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2152,
+              "id": 2051,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2144,
+                  "id": 2043,
                   "mutability": "mutable",
                   "name": "context",
-                  "nameLocation": "5987:7:4",
+                  "nameLocation": "5987:7:3",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2154,
-                  "src": "5972:22:4",
+                  "scope": 2053,
+                  "src": "5972:22:3",
                   "stateVariable": false,
                   "storageLocation": "calldata",
                   "typeDescriptions": {
@@ -968,10 +968,10 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 2143,
+                    "id": 2042,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
-                    "src": "5972:5:4",
+                    "src": "5972:5:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes_storage_ptr",
                       "typeString": "bytes"
@@ -981,13 +981,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 2146,
+                  "id": 2045,
                   "mutability": "mutable",
                   "name": "success",
-                  "nameLocation": "6009:7:4",
+                  "nameLocation": "6009:7:3",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2154,
-                  "src": "6004:12:4",
+                  "scope": 2053,
+                  "src": "6004:12:3",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -995,10 +995,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 2145,
+                    "id": 2044,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "6004:4:4",
+                    "src": "6004:4:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -1008,13 +1008,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 2148,
+                  "id": 2047,
                   "mutability": "mutable",
                   "name": "gasUseWithoutPost",
-                  "nameLocation": "6034:17:4",
+                  "nameLocation": "6034:17:3",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2154,
-                  "src": "6026:25:4",
+                  "scope": 2053,
+                  "src": "6026:25:3",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1022,10 +1022,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 2147,
+                    "id": 2046,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "6026:7:4",
+                    "src": "6026:7:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1035,81 +1035,81 @@
                 },
                 {
                   "constant": false,
-                  "id": 2151,
+                  "id": 2050,
                   "mutability": "mutable",
                   "name": "relayData",
-                  "nameLocation": "6089:9:4",
+                  "nameLocation": "6089:9:3",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2154,
-                  "src": "6061:37:4",
+                  "scope": 2053,
+                  "src": "6061:37:3",
                   "stateVariable": false,
                   "storageLocation": "calldata",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_RelayData_$3025_calldata_ptr",
+                    "typeIdentifier": "t_struct$_RelayData_$2924_calldata_ptr",
                     "typeString": "struct GsnTypes.RelayData"
                   },
                   "typeName": {
-                    "id": 2150,
+                    "id": 2049,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 2149,
+                      "id": 2048,
                       "name": "GsnTypes.RelayData",
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 3025,
-                      "src": "6061:18:4"
+                      "referencedDeclaration": 2924,
+                      "src": "6061:18:3"
                     },
-                    "referencedDeclaration": 3025,
-                    "src": "6061:18:4",
+                    "referencedDeclaration": 2924,
+                    "src": "6061:18:3",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_RelayData_$3025_storage_ptr",
+                      "typeIdentifier": "t_struct$_RelayData_$2924_storage_ptr",
                       "typeString": "struct GsnTypes.RelayData"
                     }
                   },
                   "visibility": "internal"
                 }
               ],
-              "src": "5962:142:4"
+              "src": "5962:142:3"
             },
             "returnParameters": {
-              "id": 2153,
+              "id": 2052,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "6113:0:4"
+              "src": "6113:0:3"
             },
-            "scope": 2160,
-            "src": "5938:176:4",
+            "scope": 2059,
+            "src": "5938:176:3",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           },
           {
             "functionSelector": "921276ea",
-            "id": 2159,
+            "id": 2058,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "versionPaymaster",
-            "nameLocation": "6129:16:4",
+            "nameLocation": "6129:16:3",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2155,
+              "id": 2054,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "6145:2:4"
+              "src": "6145:2:3"
             },
             "returnParameters": {
-              "id": 2158,
+              "id": 2057,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2157,
+                  "id": 2056,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2159,
-                  "src": "6171:13:4",
+                  "scope": 2058,
+                  "src": "6171:13:3",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -1117,10 +1117,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 2156,
+                    "id": 2055,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "6171:6:4",
+                    "src": "6171:6:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -1129,41 +1129,41 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "6170:15:4"
+              "src": "6170:15:3"
             },
-            "scope": 2160,
-            "src": "6120:66:4",
+            "scope": 2059,
+            "src": "6120:66:3",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 2161,
-        "src": "120:6068:4",
+        "scope": 2060,
+        "src": "120:6068:3",
         "usedErrors": []
       }
     ],
-    "src": "41:6148:4"
+    "src": "41:6148:3"
   },
   "legacyAST": {
     "absolutePath": "@opengsn/contracts/src/interfaces/IPaymaster.sol",
     "exportedSymbols": {
       "GsnTypes": [
-        3033
+        2932
       ],
       "IForwarder": [
-        2087
+        1986
       ],
       "IPaymaster": [
-        2160
+        2059
       ]
     },
-    "id": 2161,
+    "id": 2060,
     "license": "GPL-3.0-only",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 2089,
+        "id": 1988,
         "literals": [
           "solidity",
           ">=",
@@ -1171,26 +1171,26 @@
           ".6"
         ],
         "nodeType": "PragmaDirective",
-        "src": "41:24:4"
+        "src": "41:24:3"
       },
       {
-        "id": 2090,
+        "id": 1989,
         "literals": [
           "abicoder",
           "v2"
         ],
         "nodeType": "PragmaDirective",
-        "src": "66:19:4"
+        "src": "66:19:3"
       },
       {
         "absolutePath": "@opengsn/contracts/src/utils/GsnTypes.sol",
         "file": "../utils/GsnTypes.sol",
-        "id": 2091,
+        "id": 1990,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 2161,
-        "sourceUnit": 3034,
-        "src": "87:31:4",
+        "scope": 2060,
+        "sourceUnit": 2933,
+        "src": "87:31:3",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -1200,27 +1200,27 @@
         "contractDependencies": [],
         "contractKind": "interface",
         "fullyImplemented": false,
-        "id": 2160,
+        "id": 2059,
         "linearizedBaseContracts": [
-          2160
+          2059
         ],
         "name": "IPaymaster",
-        "nameLocation": "130:10:4",
+        "nameLocation": "130:10:3",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "canonicalName": "IPaymaster.GasAndDataLimits",
-            "id": 2100,
+            "id": 1999,
             "members": [
               {
                 "constant": false,
-                "id": 2093,
+                "id": 1992,
                 "mutability": "mutable",
                 "name": "acceptanceBudget",
-                "nameLocation": "1801:16:4",
+                "nameLocation": "1801:16:3",
                 "nodeType": "VariableDeclaration",
-                "scope": 2100,
-                "src": "1793:24:4",
+                "scope": 1999,
+                "src": "1793:24:3",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -1228,10 +1228,10 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 2092,
+                  "id": 1991,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
-                  "src": "1793:7:4",
+                  "src": "1793:7:3",
                   "typeDescriptions": {
                     "typeIdentifier": "t_uint256",
                     "typeString": "uint256"
@@ -1241,13 +1241,13 @@
               },
               {
                 "constant": false,
-                "id": 2095,
+                "id": 1994,
                 "mutability": "mutable",
                 "name": "preRelayedCallGasLimit",
-                "nameLocation": "1835:22:4",
+                "nameLocation": "1835:22:3",
                 "nodeType": "VariableDeclaration",
-                "scope": 2100,
-                "src": "1827:30:4",
+                "scope": 1999,
+                "src": "1827:30:3",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -1255,10 +1255,10 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 2094,
+                  "id": 1993,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
-                  "src": "1827:7:4",
+                  "src": "1827:7:3",
                   "typeDescriptions": {
                     "typeIdentifier": "t_uint256",
                     "typeString": "uint256"
@@ -1268,13 +1268,13 @@
               },
               {
                 "constant": false,
-                "id": 2097,
+                "id": 1996,
                 "mutability": "mutable",
                 "name": "postRelayedCallGasLimit",
-                "nameLocation": "1875:23:4",
+                "nameLocation": "1875:23:3",
                 "nodeType": "VariableDeclaration",
-                "scope": 2100,
-                "src": "1867:31:4",
+                "scope": 1999,
+                "src": "1867:31:3",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -1282,10 +1282,10 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 2096,
+                  "id": 1995,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
-                  "src": "1867:7:4",
+                  "src": "1867:7:3",
                   "typeDescriptions": {
                     "typeIdentifier": "t_uint256",
                     "typeString": "uint256"
@@ -1295,13 +1295,13 @@
               },
               {
                 "constant": false,
-                "id": 2099,
+                "id": 1998,
                 "mutability": "mutable",
                 "name": "calldataSizeLimit",
-                "nameLocation": "1916:17:4",
+                "nameLocation": "1916:17:3",
                 "nodeType": "VariableDeclaration",
-                "scope": 2100,
-                "src": "1908:25:4",
+                "scope": 1999,
+                "src": "1908:25:3",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -1309,10 +1309,10 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 2098,
+                  "id": 1997,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
-                  "src": "1908:7:4",
+                  "src": "1908:7:3",
                   "typeDescriptions": {
                     "typeIdentifier": "t_uint256",
                     "typeString": "uint256"
@@ -1322,108 +1322,108 @@
               }
             ],
             "name": "GasAndDataLimits",
-            "nameLocation": "1766:16:4",
+            "nameLocation": "1766:16:3",
             "nodeType": "StructDefinition",
-            "scope": 2160,
-            "src": "1759:181:4",
+            "scope": 2059,
+            "src": "1759:181:3",
             "visibility": "public"
           },
           {
             "documentation": {
-              "id": 2101,
+              "id": 2000,
               "nodeType": "StructuredDocumentation",
-              "src": "1946:95:4",
+              "src": "1946:95:3",
               "text": " Return the Gas Limits and msg.data max size constants used by the Paymaster."
             },
             "functionSelector": "b039a88f",
-            "id": 2107,
+            "id": 2006,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "getGasAndDataLimits",
-            "nameLocation": "2055:19:4",
+            "nameLocation": "2055:19:3",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2102,
+              "id": 2001,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "2074:2:4"
+              "src": "2074:2:3"
             },
             "returnParameters": {
-              "id": 2106,
+              "id": 2005,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2105,
+                  "id": 2004,
                   "mutability": "mutable",
                   "name": "limits",
-                  "nameLocation": "2145:6:4",
+                  "nameLocation": "2145:6:3",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2107,
-                  "src": "2121:30:4",
+                  "scope": 2006,
+                  "src": "2121:30:3",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_GasAndDataLimits_$2100_memory_ptr",
+                    "typeIdentifier": "t_struct$_GasAndDataLimits_$1999_memory_ptr",
                     "typeString": "struct IPaymaster.GasAndDataLimits"
                   },
                   "typeName": {
-                    "id": 2104,
+                    "id": 2003,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 2103,
+                      "id": 2002,
                       "name": "GasAndDataLimits",
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 2100,
-                      "src": "2121:16:4"
+                      "referencedDeclaration": 1999,
+                      "src": "2121:16:3"
                     },
-                    "referencedDeclaration": 2100,
-                    "src": "2121:16:4",
+                    "referencedDeclaration": 1999,
+                    "src": "2121:16:3",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_GasAndDataLimits_$2100_storage_ptr",
+                      "typeIdentifier": "t_struct$_GasAndDataLimits_$1999_storage_ptr",
                       "typeString": "struct IPaymaster.GasAndDataLimits"
                     }
                   },
                   "visibility": "internal"
                 }
               ],
-              "src": "2111:46:4"
+              "src": "2111:46:3"
             },
-            "scope": 2160,
-            "src": "2046:112:4",
+            "scope": 2059,
+            "src": "2046:112:3",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           },
           {
             "functionSelector": "7da0a877",
-            "id": 2112,
+            "id": 2011,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "trustedForwarder",
-            "nameLocation": "2173:16:4",
+            "nameLocation": "2173:16:3",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2108,
+              "id": 2007,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "2189:2:4"
+              "src": "2189:2:3"
             },
             "returnParameters": {
-              "id": 2111,
+              "id": 2010,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2110,
+                  "id": 2009,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2112,
-                  "src": "2215:7:4",
+                  "scope": 2011,
+                  "src": "2215:7:3",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1431,10 +1431,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 2109,
+                    "id": 2008,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "2215:7:4",
+                    "src": "2215:7:3",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -1444,48 +1444,48 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "2214:9:4"
+              "src": "2214:9:3"
             },
-            "scope": 2160,
-            "src": "2164:60:4",
+            "scope": 2059,
+            "src": "2164:60:3",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           },
           {
             "documentation": {
-              "id": 2113,
+              "id": 2012,
               "nodeType": "StructuredDocumentation",
-              "src": "2226:48:4",
+              "src": "2226:48:3",
               "text": " return the relayHub of this contract."
             },
             "functionSelector": "74e861d6",
-            "id": 2118,
+            "id": 2017,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "getHubAddr",
-            "nameLocation": "2288:10:4",
+            "nameLocation": "2288:10:3",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2114,
+              "id": 2013,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "2298:2:4"
+              "src": "2298:2:3"
             },
             "returnParameters": {
-              "id": 2117,
+              "id": 2016,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2116,
+                  "id": 2015,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2118,
-                  "src": "2324:7:4",
+                  "scope": 2017,
+                  "src": "2324:7:3",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1493,10 +1493,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 2115,
+                    "id": 2014,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "2324:7:4",
+                    "src": "2324:7:3",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -1506,48 +1506,48 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "2323:9:4"
+              "src": "2323:9:3"
             },
-            "scope": 2160,
-            "src": "2279:54:4",
+            "scope": 2059,
+            "src": "2279:54:3",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           },
           {
             "documentation": {
-              "id": 2119,
+              "id": 2018,
               "nodeType": "StructuredDocumentation",
-              "src": "2339:161:4",
+              "src": "2339:161:3",
               "text": " Can be used to determine if the contract can pay for incoming calls before making any.\n @return the paymaster's deposit in the RelayHub."
             },
             "functionSelector": "2afe31c1",
-            "id": 2124,
+            "id": 2023,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "getRelayHubDeposit",
-            "nameLocation": "2514:18:4",
+            "nameLocation": "2514:18:3",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2120,
+              "id": 2019,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "2532:2:4"
+              "src": "2532:2:3"
             },
             "returnParameters": {
-              "id": 2123,
+              "id": 2022,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2122,
+                  "id": 2021,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2124,
-                  "src": "2558:7:4",
+                  "scope": 2023,
+                  "src": "2558:7:3",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1555,10 +1555,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 2121,
+                    "id": 2020,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "2558:7:4",
+                    "src": "2558:7:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1567,62 +1567,62 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "2557:9:4"
+              "src": "2557:9:3"
             },
-            "scope": 2160,
-            "src": "2505:62:4",
+            "scope": 2059,
+            "src": "2505:62:3",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           },
           {
             "documentation": {
-              "id": 2125,
+              "id": 2024,
               "nodeType": "StructuredDocumentation",
-              "src": "2573:2198:4",
+              "src": "2573:2198:3",
               "text": " Called by Relay (and RelayHub), to validate if the paymaster agrees to pay for this call.\n MUST be protected with relayHubOnly() in case it modifies state.\n The Paymaster rejects by the following \"revert\" operations\n  - preRelayedCall() method reverts\n  - the forwarder reverts because of nonce or signature error\n  - the paymaster returned \"rejectOnRecipientRevert\", and the recipient contract reverted.\n In any of the above cases, all paymaster calls (and recipient call) are reverted.\n In any other case, the paymaster agrees to pay for the gas cost of the transaction (note\n  that this includes also postRelayedCall revert)\n The rejectOnRecipientRevert flag means the Paymaster \"delegate\" the rejection to the recipient\n  code.  It also means the Paymaster trust the recipient to reject fast: both preRelayedCall,\n  forwarder check and receipient checks must fit into the GasLimits.acceptanceBudget,\n  otherwise the TX is paid by the Paymaster.\n  @param relayRequest - the full relay request structure\n  @param signature - user's EIP712-compatible signature of the {@link relayRequest}.\n              Note that in most cases the paymaster shouldn't try use it at all. It is always checked\n              by the forwarder immediately after preRelayedCall returns.\n  @param approvalData - extra dapp-specific data (e.g. signature from trusted party)\n  @param maxPossibleGas - based on values returned from {@link getGasAndDataLimits},\n         the RelayHub will calculate the maximum possible amount of gas the user may be charged for.\n         In order to convert this value to wei, the Paymaster has to call \"relayHub.calculateCharge()\"\n  return:\n      a context to be passed to postRelayedCall\n      rejectOnRecipientRevert - TRUE if paymaster want to reject the TX if the recipient reverts.\n          FALSE means that rejects by the recipient will be completed on chain, and paid by the paymaster.\n          (note that in the latter case, the preRelayedCall and postRelayedCall are not reverted)."
             },
             "functionSelector": "00be5dd4",
-            "id": 2141,
+            "id": 2040,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "preRelayedCall",
-            "nameLocation": "4785:14:4",
+            "nameLocation": "4785:14:3",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2135,
+              "id": 2034,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2128,
+                  "id": 2027,
                   "mutability": "mutable",
                   "name": "relayRequest",
-                  "nameLocation": "4840:12:4",
+                  "nameLocation": "4840:12:3",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2141,
-                  "src": "4809:43:4",
+                  "scope": 2040,
+                  "src": "4809:43:3",
                   "stateVariable": false,
                   "storageLocation": "calldata",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_RelayRequest_$3032_calldata_ptr",
+                    "typeIdentifier": "t_struct$_RelayRequest_$2931_calldata_ptr",
                     "typeString": "struct GsnTypes.RelayRequest"
                   },
                   "typeName": {
-                    "id": 2127,
+                    "id": 2026,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 2126,
+                      "id": 2025,
                       "name": "GsnTypes.RelayRequest",
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 3032,
-                      "src": "4809:21:4"
+                      "referencedDeclaration": 2931,
+                      "src": "4809:21:3"
                     },
-                    "referencedDeclaration": 3032,
-                    "src": "4809:21:4",
+                    "referencedDeclaration": 2931,
+                    "src": "4809:21:3",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_RelayRequest_$3032_storage_ptr",
+                      "typeIdentifier": "t_struct$_RelayRequest_$2931_storage_ptr",
                       "typeString": "struct GsnTypes.RelayRequest"
                     }
                   },
@@ -1630,13 +1630,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 2130,
+                  "id": 2029,
                   "mutability": "mutable",
                   "name": "signature",
-                  "nameLocation": "4877:9:4",
+                  "nameLocation": "4877:9:3",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2141,
-                  "src": "4862:24:4",
+                  "scope": 2040,
+                  "src": "4862:24:3",
                   "stateVariable": false,
                   "storageLocation": "calldata",
                   "typeDescriptions": {
@@ -1644,10 +1644,10 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 2129,
+                    "id": 2028,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
-                    "src": "4862:5:4",
+                    "src": "4862:5:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes_storage_ptr",
                       "typeString": "bytes"
@@ -1657,13 +1657,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 2132,
+                  "id": 2031,
                   "mutability": "mutable",
                   "name": "approvalData",
-                  "nameLocation": "4911:12:4",
+                  "nameLocation": "4911:12:3",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2141,
-                  "src": "4896:27:4",
+                  "scope": 2040,
+                  "src": "4896:27:3",
                   "stateVariable": false,
                   "storageLocation": "calldata",
                   "typeDescriptions": {
@@ -1671,10 +1671,10 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 2131,
+                    "id": 2030,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
-                    "src": "4896:5:4",
+                    "src": "4896:5:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes_storage_ptr",
                       "typeString": "bytes"
@@ -1684,13 +1684,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 2134,
+                  "id": 2033,
                   "mutability": "mutable",
                   "name": "maxPossibleGas",
-                  "nameLocation": "4941:14:4",
+                  "nameLocation": "4941:14:3",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2141,
-                  "src": "4933:22:4",
+                  "scope": 2040,
+                  "src": "4933:22:3",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1698,10 +1698,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 2133,
+                    "id": 2032,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "4933:7:4",
+                    "src": "4933:7:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1710,21 +1710,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "4799:162:4"
+              "src": "4799:162:3"
             },
             "returnParameters": {
-              "id": 2140,
+              "id": 2039,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2137,
+                  "id": 2036,
                   "mutability": "mutable",
                   "name": "context",
-                  "nameLocation": "5001:7:4",
+                  "nameLocation": "5001:7:3",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2141,
-                  "src": "4988:20:4",
+                  "scope": 2040,
+                  "src": "4988:20:3",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -1732,10 +1732,10 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 2136,
+                    "id": 2035,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
-                    "src": "4988:5:4",
+                    "src": "4988:5:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes_storage_ptr",
                       "typeString": "bytes"
@@ -1745,13 +1745,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 2139,
+                  "id": 2038,
                   "mutability": "mutable",
                   "name": "rejectOnRecipientRevert",
-                  "nameLocation": "5015:23:4",
+                  "nameLocation": "5015:23:3",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2141,
-                  "src": "5010:28:4",
+                  "scope": 2040,
+                  "src": "5010:28:3",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1759,10 +1759,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 2138,
+                    "id": 2037,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "5010:4:4",
+                    "src": "5010:4:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -1771,42 +1771,42 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "4987:52:4"
+              "src": "4987:52:3"
             },
-            "scope": 2160,
-            "src": "4776:264:4",
+            "scope": 2059,
+            "src": "4776:264:3",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           },
           {
             "documentation": {
-              "id": 2142,
+              "id": 2041,
               "nodeType": "StructuredDocumentation",
-              "src": "5046:887:4",
+              "src": "5046:887:3",
               "text": " This method is called after the actual relayed function call.\n It may be used to record the transaction (e.g. charge the caller by some contract logic) for this call.\n MUST be protected with relayHubOnly() in case it modifies state.\n @param context - the call context, as returned by the preRelayedCall\n @param success - true if the relayed call succeeded, false if it reverted\n @param gasUseWithoutPost - the actual amount of gas used by the entire transaction, EXCEPT\n        the gas used by the postRelayedCall itself.\n @param relayData - the relay params of the request. can be used by relayHub.calculateCharge()\n Revert in this functions causes a revert of the client's relayed call (and preRelayedCall(), but the Paymaster\n is still committed to pay the relay for the entire transaction."
             },
             "functionSelector": "76fa01c3",
-            "id": 2154,
+            "id": 2053,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "postRelayedCall",
-            "nameLocation": "5947:15:4",
+            "nameLocation": "5947:15:3",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2152,
+              "id": 2051,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2144,
+                  "id": 2043,
                   "mutability": "mutable",
                   "name": "context",
-                  "nameLocation": "5987:7:4",
+                  "nameLocation": "5987:7:3",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2154,
-                  "src": "5972:22:4",
+                  "scope": 2053,
+                  "src": "5972:22:3",
                   "stateVariable": false,
                   "storageLocation": "calldata",
                   "typeDescriptions": {
@@ -1814,10 +1814,10 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 2143,
+                    "id": 2042,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
-                    "src": "5972:5:4",
+                    "src": "5972:5:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes_storage_ptr",
                       "typeString": "bytes"
@@ -1827,13 +1827,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 2146,
+                  "id": 2045,
                   "mutability": "mutable",
                   "name": "success",
-                  "nameLocation": "6009:7:4",
+                  "nameLocation": "6009:7:3",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2154,
-                  "src": "6004:12:4",
+                  "scope": 2053,
+                  "src": "6004:12:3",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1841,10 +1841,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 2145,
+                    "id": 2044,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "6004:4:4",
+                    "src": "6004:4:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -1854,13 +1854,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 2148,
+                  "id": 2047,
                   "mutability": "mutable",
                   "name": "gasUseWithoutPost",
-                  "nameLocation": "6034:17:4",
+                  "nameLocation": "6034:17:3",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2154,
-                  "src": "6026:25:4",
+                  "scope": 2053,
+                  "src": "6026:25:3",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1868,10 +1868,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 2147,
+                    "id": 2046,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "6026:7:4",
+                    "src": "6026:7:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1881,81 +1881,81 @@
                 },
                 {
                   "constant": false,
-                  "id": 2151,
+                  "id": 2050,
                   "mutability": "mutable",
                   "name": "relayData",
-                  "nameLocation": "6089:9:4",
+                  "nameLocation": "6089:9:3",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2154,
-                  "src": "6061:37:4",
+                  "scope": 2053,
+                  "src": "6061:37:3",
                   "stateVariable": false,
                   "storageLocation": "calldata",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_RelayData_$3025_calldata_ptr",
+                    "typeIdentifier": "t_struct$_RelayData_$2924_calldata_ptr",
                     "typeString": "struct GsnTypes.RelayData"
                   },
                   "typeName": {
-                    "id": 2150,
+                    "id": 2049,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 2149,
+                      "id": 2048,
                       "name": "GsnTypes.RelayData",
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 3025,
-                      "src": "6061:18:4"
+                      "referencedDeclaration": 2924,
+                      "src": "6061:18:3"
                     },
-                    "referencedDeclaration": 3025,
-                    "src": "6061:18:4",
+                    "referencedDeclaration": 2924,
+                    "src": "6061:18:3",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_RelayData_$3025_storage_ptr",
+                      "typeIdentifier": "t_struct$_RelayData_$2924_storage_ptr",
                       "typeString": "struct GsnTypes.RelayData"
                     }
                   },
                   "visibility": "internal"
                 }
               ],
-              "src": "5962:142:4"
+              "src": "5962:142:3"
             },
             "returnParameters": {
-              "id": 2153,
+              "id": 2052,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "6113:0:4"
+              "src": "6113:0:3"
             },
-            "scope": 2160,
-            "src": "5938:176:4",
+            "scope": 2059,
+            "src": "5938:176:3",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           },
           {
             "functionSelector": "921276ea",
-            "id": 2159,
+            "id": 2058,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "versionPaymaster",
-            "nameLocation": "6129:16:4",
+            "nameLocation": "6129:16:3",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2155,
+              "id": 2054,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "6145:2:4"
+              "src": "6145:2:3"
             },
             "returnParameters": {
-              "id": 2158,
+              "id": 2057,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2157,
+                  "id": 2056,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2159,
-                  "src": "6171:13:4",
+                  "scope": 2058,
+                  "src": "6171:13:3",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -1963,10 +1963,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 2156,
+                    "id": 2055,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "6171:6:4",
+                    "src": "6171:6:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -1975,21 +1975,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "6170:15:4"
+              "src": "6170:15:3"
             },
-            "scope": 2160,
-            "src": "6120:66:4",
+            "scope": 2059,
+            "src": "6120:66:3",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 2161,
-        "src": "120:6068:4",
+        "scope": 2060,
+        "src": "120:6068:3",
         "usedErrors": []
       }
     ],
-    "src": "41:6148:4"
+    "src": "41:6148:3"
   },
   "compiler": {
     "name": "solc",
@@ -1997,7 +1997,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.5",
-  "updatedAt": "2022-02-27T09:03:59.939Z",
+  "updatedAt": "2022-03-14T09:36:33.088Z",
   "devdoc": {
     "kind": "dev",
     "methods": {

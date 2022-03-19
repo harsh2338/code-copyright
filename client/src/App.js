@@ -5,7 +5,6 @@ import ipfs from "./ipfs";
 import "./App.css";
 import DragDrop from "./components/DragDrop";
 
-
 function App() {
 	const [lang, setLang] = useState(null);
 	const [file, setFile] = useState(null);
@@ -24,10 +23,6 @@ function App() {
 		js: 3,
 	};
 
-	const  forwarder = "0x396292EfC0f4d63d40E36c36ef26c80067485312"
-  const paymaster = "0xd8a562D9EaF925138656B0680813B2Fd353cb7Aa"
-
-
 	useEffect(() => {
 		getData();
 	}, [ipfsHash]);
@@ -35,7 +30,7 @@ function App() {
 	useEffect(() => {
 		async function fetchData() {
 			try {
-
+				// Get network provider and web3 instance.
 				const web3 = await getWeb3();
 
 				// Use web3 to get the user's accounts.
@@ -80,6 +75,16 @@ function App() {
 	};
 
 	const sendToContract = async () => {
+		var newHashSet = Array();
+		var len = 0;
+		const mySet1 = new Set();
+		for (var i = 0; i < hashSet.length; i++) {
+			if (!mySet1.has(hashSet[i])) {
+				mySet1.add(hashSet[i]);
+				newHashSet.push("0x" + hashSet[i]);
+				len++;
+			}
+		}
 		await contract.methods
 			.uploadFile(
 				file.size,
@@ -87,9 +92,12 @@ function App() {
 				file.name,
 				"some desc",
 				codeFingerprint,
-				hashSet
+				newHashSet,
+				len
 			)
-			.send({ from: paymaster,forwarder });
+			.send({ from: accounts[0] });
+		let fc = await contract.methods.fileCount().call();
+		console.log(fc);
 	};
 
 	var onLangChange = (e) => {
@@ -119,7 +127,7 @@ function App() {
 			reader.onload = async (e) => {
 				let text = e.target.result;
 				const langIndex = langIndexes[lang];
-				fetch("http://localhost:8080", {
+				fetch("http://localhost:8000", {
 					method: "POST",
 					headers: {
 						"Content-Type": "application/json",
@@ -156,12 +164,15 @@ function App() {
 
 	return web3 ? (
 		<div className="App">
-			<header>Code Copyright Management and Code Plagiarism Detection</header>
+			<header style={{ fontWeight: "bold", fontSize: "large" }}>
+				Code Copyright Management and Code Plagiarism Detection
+			</header>
 			<br />
 			<DragDrop setSelectedFile={setSelectedFile} />
 			<br />
-			<br />
-			<label htmlFor="language">Select the language</label>
+			<label htmlFor="language" style={{ fontWeight: "bold" }}>
+				Select the language:{" "}
+			</label>
 			<select name="language" id="language" onChange={(e) => onLangChange(e)}>
 				<option value="Select">Select</option>
 				<option value="js">Javascript</option>
@@ -169,6 +180,7 @@ function App() {
 				<option value="java">JAVA</option>
 				<option value="python">Python</option>
 			</select>
+			<br />
 			<br />
 			<button type="submit" onClick={onSubmit}>
 				Submit
