@@ -1,8 +1,8 @@
 const ipfsClient = require("ipfs-http-client");
 const ipfs = ipfsClient.create({
-	host: "127.0.0.1",
+	host: "ipfs.infura.io",
 	port: 5001,
-	protocol: "http",
+	protocol: "https",
 });
     // const ipfs = ipfsClient('/ip4/127.0.0.1/tcp/5001')
 
