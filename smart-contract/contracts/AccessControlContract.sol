@@ -3,9 +3,9 @@ pragma solidity >=0.4.22 <0.9.0;
 contract AccessControlContract 
 {
 
-  mapping(string=>mapping(address=>bool)) public hasPermissionsMap;
+  mapping(string=>mapping(string=>bool)) public hasPermissionsMap;
 
-    function doesUserHavePermission(string memory cid,address userAddress)
+    function doesUserHavePermission(string memory cid,string memory userAddress)
         public
         view
         returns (bool)
@@ -13,13 +13,13 @@ contract AccessControlContract
         return hasPermissionsMap[cid][userAddress];
     }
 
-    function addPermission(string memory cid,address userAddress)
+    function addPermission(string memory cid,string memory userAddress)
         public
     {
         hasPermissionsMap[cid][userAddress]=true;
     }
 
-    function removePermission(string memory cid,address userAddress)
+    function removePermission(string memory cid,string memory userAddress)
         public
     {
         hasPermissionsMap[cid][userAddress]=false;

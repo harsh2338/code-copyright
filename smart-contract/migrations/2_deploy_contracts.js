@@ -1,10 +1,12 @@
 const PlagiarismContract = artifacts.require("PlagiarismContract");
+const AccessControlContract = artifacts.require("AccessControlContract");
 
 // const Forwarder = artifacts.require('Forwarder.sol')
 
 
 module.exports = function (deployer) {
   deployer.deploy(PlagiarismContract);
+  deployer.deploy(AccessControlContract);
 };
 
 
