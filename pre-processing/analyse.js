@@ -1,28 +1,25 @@
-import { printTree } from "./index.js";
+import { printTree, printTreeFromFilePath } from "./index.js";
 import Jaccard from "jaccard-index";
 
 import fs from "fs";
 var files = fs.readdirSync("./data/cpp");
+
 
 var jaccard = Jaccard();
 
 var hs1, hs2;
 var jaccAns = [];
 
-hs1 = printTree(2, `./data/cpp/${files[10]}`);
-hs2 = printTree(2, `./data/cpp/${files[0]}`);
-jaccAns.push(jaccard.index(hs1, hs2));
-console.log(jaccAns);
 
-// for (var i = 0; i < 10; i++) {
-//   jaccAns.push(printTree(2, `./data/cpp/${files[i]}`));
-// }
-// for (var i = 0; i < 10; i++) {
-//   var temp = [];
-//   for (var j = 0; j < 10; j++) {
-//     hs1 = printTree(2, `./data/cpp/${files[i]}`);
-//     hs2 = printTree(2, `./data/cpp/${files[j]}`);
-//     temp.push(jaccard.jaccardSimilarity(hs1, hs2));
-//   }
-//   ans.push(temp);
-// }
+
+var start = new Date().getTime();
+
+for(let i=0;i<100;i++){
+    hs1 = printTreeFromFilePath(2, `./data/cpp/${i}.cpp`);
+}
+var end = new Date().getTime();
+var time = end - start;
+console.log(time)
+// hs2 = printTree(2, `./data/cpp/${files[0]}`);
+// jaccAns.push(jaccard.index(hs1, hs2));
+// console.log(jaccAns);

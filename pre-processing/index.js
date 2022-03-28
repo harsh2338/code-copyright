@@ -146,4 +146,61 @@ function printTree(languageIndex, input) {
 		codeFingerprint,
 	};
 }
-export { printTree };
+
+
+function printTreeFromFilePath(languageIndex, filePath) {
+	const input = fs.readFileSync(filePath, "utf8");
+	const chars = new antlr4.InputStream(input);
+	var parser;
+	var tree;
+	switch (languageIndex) {
+		case 0:
+			parser = getJavaParser(chars);
+			parser.buildParseTrees = true;
+			tree = parser.classDeclaration();
+			break;
+		case 1:
+			parser = getPythonParser(chars);
+			parser.buildParseTrees = true;
+			tree = parser.compound_stmt();
+			break;
+		case 2:
+			parser = getCPPParser(chars);
+			parser.buildParseTrees = true;
+			tree = parser.compoundStatement();
+			break;
+		case 3:
+			parser = getJavaScriptParser(chars);
+			parser.buildParseTrees = true;
+			tree = parser.program();
+	}
+
+	var visitorObject = new Visitor(languageIndex);
+	tree.accept(visitorObject);
+
+	// var ruleNamesIndices = visitorObject.getRuleNamesIndices();
+	var ruleNamesIndices = visitorObject.getRuleNames();
+	// console.log("rulenameIndices", ruleNamesIndices);
+	// console.log("Rule names : \n", visitorObject.getRuleNames());
+
+	//Define n
+	var n = 4;
+
+	//Get N-Grams
+	var nArr = getNGrams(ruleNamesIndices, n);
+	// console.log(nArr);
+
+	// Encrypt using MD5 and get HashSet
+	var hashSet = getHashSet(nArr);
+	// console.log("Hash Set:", hashSet);
+
+	// Encrypt the HashSet using SHA256 and get the Code Fingerprint
+	var codeFingerprint = getCodeFingerprint(hashSet);
+	// console.log("Code Fingerprint:", codeFingerprint);
+
+	return {
+		hashSet,
+		codeFingerprint,
+	};
+}
+export { printTree, printTreeFromFilePath };
