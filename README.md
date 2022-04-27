@@ -16,7 +16,7 @@ A web application that allows users to upload code files for copyright protectio
 ## Running Instructions:
 
 1. Clone the repository<br />
-   `- git clone https://github.com/Deep512/code-copyright-management`<br />
+   `- git clone https://github.com/harsh2338/code-copyright`<br />
 
 2. Download and setup geth(if not already installed). Geth should be running on http://localhost:8545<br />
 
