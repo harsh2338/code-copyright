@@ -10,13 +10,13 @@ contract("Test AccessControlContract", async (accounts) => {
         console.log("Should be false: ");
         console.log(res);
 
-        await contract.addPermission(docCID,address);
-        res =await contract.doesUserHavePermission(docCID,address);
-        console.log("Should be true: ");
-        console.log(res);
-        await contract.removePermission(docCID,address);
-        res =await contract.doesUserHavePermission(docCID,address);
-        console.log("Should be false: ");
-        console.log(res);       
+        // await contract.addPermission(docCID,address);
+        // res =await contract.doesUserHavePermission(docCID,address);
+        // console.log("Should be true: ");
+        // console.log(res);
+        // await contract.removePermission(docCID,address);
+        // res =await contract.doesUserHavePermission(docCID,address);
+        // console.log("Should be false: ");
+        // console.log(res);       
     })
 });

@@ -1,4 +1,7 @@
 const PlagiarismContract = artifacts.require("PlagiarismContract");
+const { toBN } = web3.utils;
+const fs = require('fs')
+
 Array.prototype.equals = function(arr2) {
     return (
         this.length === arr2.length &&
@@ -134,6 +137,38 @@ contract("Test PlagiarismContract", async (accounts) => {
             )
     })
 
+
+    it("Testing Amount of files uploaded", done => {
+        new Promise(async function(resolve, reject) {
+        const docCID = "QmbWqxBEKC3P8tqsKc98xmWNzrzDtRLMiMPL8wBuTGsMnR";
+        const contract = await PlagiarismContract.deployed();
+
+        const codeFingerPrint ="45543f3768c51af8a42bb6c80acde97f5e7f653b50c1e4af3a4039bf4ef5405a";
+    
+            for(let i=0;i<100;i++){
+                const receipt=await contract.uploadFile(
+                    500, 
+                    docCID,    
+                    "_fileName",
+                    "_fileDescription", 
+                    codeFingerPrint, 
+                    hashSet, 
+                    hashSet.length, 
+                    0
+                )
+            const gasUsed = toBN(receipt.receipt.gasUsed);
+            console.log(`${receipt.receipt.gasUsed}`);
+        }
+        const filesCount = await contract.totalFileCount();
+        console.log(filesCount);
+            resolve();
+        }).then(res => {
+            done();
+        });
+    }).timeout(100000000);
+
+
+
         it("Checking if duplicate upload is not allowed", async()=>{
         const docCID = "QmbWqxBEKC3P8tqsKc98xmWNzrzDtRLMiMPL8wBuTGsMnR";
         const contract = await PlagiarismContract.deployed();
@@ -186,8 +221,8 @@ contract("Test PlagiarismContract", async (accounts) => {
                 1, 
                 0
             )
-            console.log("**************** Res 1 **********************");
-            console.log(res1);
+            // console.log("**************** Res 1 **********************");
+            // console.log(res1);
             const res2=await contract.uploadFile(
                 500, 
                 docCID2,    
@@ -198,8 +233,8 @@ contract("Test PlagiarismContract", async (accounts) => {
                 1, 
                 0
             )
-            console.log("**************** Res 1 **********************");
-            console.log(res2);
+            // console.log("**************** Res 1 **********************");
+            // console.log(res2);
             const res3=await contract.uploadFile(
                 500, 
                 docCID3,    
@@ -210,8 +245,8 @@ contract("Test PlagiarismContract", async (accounts) => {
                 1, 
                 1
             )
-            console.log("**************** Res 1 **********************");
-            console.log(res3);
+            // console.log("**************** Res 1 **********************");
+            // console.log(res3);
             const res4=await contract.uploadFile(
                 500, 
                 docCID4,    
@@ -222,8 +257,8 @@ contract("Test PlagiarismContract", async (accounts) => {
                 1, 
                 2
             )
-            console.log("**************** Res 4 **********************");
-            console.log(res4);
+            // console.log("**************** Res 4 **********************");
+            // console.log(res4);
             const files = await contract.getFilesUploadedByUser();
             const filesCount = await contract.totalFileCount();
 
