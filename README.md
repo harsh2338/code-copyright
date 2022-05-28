@@ -1,6 +1,6 @@
 # Blockchain Based Code Plagiarism Detection
 
-![](../images/plagiarised.png)
+![](https://github.com/harsh2338/code-copyright/blob/main/images/plagiarised.png)
 
 An application that checks if the code submitted by the user is plagiarised or not.<br />
 
