@@ -1,6 +1,6 @@
 # Blockchain Based Code Plagiarism Detection
 
-![](https://github.com/harsh2338/Eye-Gaze-Controlled-Virtual-Keyboard/blob/main/images/plagiarised.png)
+![](../images/plagiarised.png)
 
 An application that checks if the code submitted by the user is plagiarised or not.<br />
 
