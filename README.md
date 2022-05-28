@@ -1,6 +1,8 @@
-# Blockchain Based Code Copyright Management System
+# Blockchain Based Code Plagiarism Detection
 
-A web application that allows users to upload code files for copyright protection.<br />
+![](https://github.com/harsh2338/Eye-Gaze-Controlled-Virtual-Keyboard/blob/main/images/plagiarised.png)
+
+An application that checks if the code submitted by the user is plagiarised or not.<br />
 
 ## Tools and Technologies Used:
 
